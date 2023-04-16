@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="consultation.css" />
+    <title>Consultation</title>
+  </head>
+  <body>
+    <header class="intro">
+      <p class="sub-intro">
+        <strong
+          ><i>The best place to interact with healthcare providers</i></strong
+        >
+      </p>
+      <hr />
+      <ul class="nav">
+        <li>
+          <a href="dds.html" style="color: #9fafca"><strong>Home</strong></a>
+        </li>
+        <li>
+          <a href="about.html" style="color: #9fafca"
+            ><strong>About Us</strong></a
+          >
+        </li>
+        <li>
+          <a href="signup.html" style="color: #9fafca"
+            ><strong>SIGN UP</strong></a
+          >
+        </li>
+        <li>
+          <a href="consultation.html" style="color: #9fafca"
+            ><strong>Book a consultation</strong></a
+          >
+        </li>
+        <li>
+          <a href="contact.html" style="color: #9fafca"
+            ><strong>Contact Us</strong></a
+          >
+        </li>
+      </ul>
+    </header>
+    <div id="consultation">
+      <h2>BOOK A CONSULTATION</h2>
+      <fieldset class="main-fieldset">
+        <label for="fname"
+          >First Name:
+          <input
+            type="text"
+            id="fname"
+            placeholder="Itunuoluwa"
+            class="block"
+          />
+        </label>
+        <label for="lname"
+          >Last Name:
+          <input type="text" id="lname" placeholder="Ipadeola" class="block" />
+        </label>
+        <label for="dob"
+          >D.O.B:
+          <input type="date" id="dob" class="block" />
+        </label>
+        <p class="select">Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="m-gender">
+          <input type="radio" id="m-gender" name="gender" /> Male
+        </label>
+        <label for="f-gender">
+          <input type="radio" id="f-gender" name="gender" /> Female
+        </label>
+      </fieldset>
+      <fieldset class="main-fieldset">
+        <p>Can you analyse what is wrong with you?</p>
+        <fieldset>
+          <legend>How do you feel?</legend>
+          <label for="feeling">
+            <input type="radio" name="feeling" /> Feverish
+          </label>
+          <label for="feeling">
+            <input type="radio" name="feeling" /> Nauseous
+          </label>
+          <label for="feeling">
+            <input type="radio" name="feeling" /> Fatigue
+          </label>
+          <label for="feeling">
+            <input type="radio" name="feeling" /> Pallid
+          </label>
+          <label for="feeling">
+            <input type="radio" name="feeling" /> Other
+            <input
+              type="text"
+              name="feeling"
+              id="feeling"
+              style="
+                background-color: #0e387a;
+                border: 1px solid #9fafca;
+                color: #9fafca;
+              "
+            />
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>How Long has it been on?</legend>
+          <label for="time">
+            <input type="radio" name="time" /> Just today
+          </label>
+          <label for="time">
+            <input type="radio" name="time" /> About a week
+          </label>
+          <label for="time">
+            <input type="radio" name="time" /> About a month
+          </label>
+          <label for="time">
+            <input type="radio" name="time" /> A very long time ago
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>How frequent do you feel this?</legend>
+          <label for="frequency">
+            <input type="radio" name="frequency" /> Oftenly
+          </label>
+          <label for="frequency">
+            <input type="radio" name="frequency" /> Seldomly
+          </label>
+          <label for="frequency">
+            <input type="radio" name="frequency" /> Periodically
+          </label>
+          <label for="frequency">
+            <input type="radio" name="frequency" /> Occasionally
+          </label>
+          <label for="frequency">
+            <input type="radio" name="frequency" /> Never, this is the first
+            time
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Have you taken any medications or supplements?</legend>
+          <label for="med"> <input type="radio" name="med" /> Yes </label>
+          <label for="med"> <input type="radio" name="med" /> No </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Do you have any allergies?</legend>
+          <label for="allergy">
+            <input type="radio" name="allergy" /> Yes
+          </label>
+          <label for="allergy">
+            <input type="radio" name="allergy" /> No
+          </label>
+          <label for="if"
+            >If yes, what is it/are they?
+            <input
+              type="text"
+              name="if"
+              id="if"
+              style="
+                background-color: #0e387a;
+                border: 1px solid #9fafca;
+                color: #9fafca;
+                width: 50%;
+              "
+            />
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Have you ever taken a surgery?</legend>
+          <label for="surgery">
+            <input type="radio" name="surgery" /> Yes
+          </label>
+          <label for="surgery">
+            <input type="radio" name="surgery" /> No
+          </label>
+          <label for="yes"
+            >If yes, what is it/are they?
+            <input
+              type="text"
+              name="yes"
+              id="yes"
+              style="
+                background-color: #0e387a;
+                border: 1px solid #9fafca;
+                color: #9fafca;
+                width: 50%;
+              "
+            />
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>
+            Can you describe what's wrong with you, what are your symptoms?
+          </legend>
+          <textarea
+            name="symptoms"
+            id=""
+            cols="60"
+            rows="3"
+            style="
+              background-color: #0e387a;
+              border: 1px solid #9fafca;
+              color: #9fafca;
+              font-size: x-large;
+              font-family: monospace;
+              width: 100%;
+            "
+            placeholder="Your symptoms..."
+          ></textarea>
+        </fieldset>
+      </fieldset>
+      <br />
+      <p>
+        Do you want to get consultations from a health practitioner?<br />
+        Contact a doctor now!
+      </p>
+      <a
+        href="https://www.icliniq.com"
+        style="color: #9fafca; font-size: x-large; font-family: monospace"
+        >Doctor!</a
+      ><br /><br />
+      <a
+        href="https://www.gigadocs.com"
+        style="color: #9fafca; font-size: x-large; font-family: monospace"
+        >Doctor!!</a
+      ><br /><br />
+      <a
+        href="https://www.justanswer.com"
+        style="color: #9fafca; font-size: x-large; font-family: monospace"
+        >Doctor!!!</a
+      >
+    </div>
+    <br /><br />
+  </body>
+</html>
